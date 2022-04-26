@@ -7,14 +7,14 @@
     <title>Exercício - Laise</title>
 </head>
 <body> 
- <!-- hoje é dia 26/04/2022, fulano tem 900 anos e nasceu em sp -->
+
 <?php
-    define ("DATA", "26/04/2022");
+    $data = date ("d/m/Y");
     define ("NOME", "Jonas");
-    define ("IDADE", 18);
+    $idade = date("Y") - 2003;
     define ("CIDADE", "São Paulo");
 ?>
-    <p>Hoje é dia <?=DATA?>. <?=NOME?> tem <?=IDADE?> anos de idade e nasceu em <?=CIDADE?> </p>
+    <p>Hoje é dia <?=$data?>. <?=NOME?> tem <?=$idade?> anos de idade e nasceu em <?=CIDADE?> </p>
 
 </body>
 </html>
