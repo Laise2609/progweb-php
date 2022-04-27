@@ -10,18 +10,21 @@
     <h1>Salário</h1>
 
 <?php
-    $salario = 300;
+    $salario = 1000;
 
-    if($salario = 500){
-        $salario * 1.15;
+    echo "<p>O salário antigo era $salario</p>";
+
+    if($salario < 500){
+        $salarioAtual = ($salario * 1.15);
     } elseif ($salario = 1000) {
-        $salario * 1.10;
+        $salarioAtual = ($salario * 1.10);
     } else {
-        $salario * 1.05;
+        $salarioAtual = ($salario * 1.05);
     }
 
-    echo "<p>O salário é $salario</p>"
+    echo "<p>O salario atual é $salarioAtual</p>"
 ?>
+
 
 
 
