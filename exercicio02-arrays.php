@@ -10,6 +10,7 @@
         body {
             display: grid;
             place-items: center;
+            background-color: darkcyan;
         }
     </style>
 </head>
