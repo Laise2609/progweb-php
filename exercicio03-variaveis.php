@@ -16,13 +16,15 @@
 
     if($salario < 500){
         $salarioAtual = ($salario * 1.15);
-    } elseif ($salario = 1000) {
+    } elseif ($salario <= 1000) {
         $salarioAtual = ($salario * 1.10);
     } else {
         $salarioAtual = ($salario * 1.05);
     }
+    
+    $salarioAtual = number_format($salarioAtual, 2, ",", ".");
 
-    echo "<p>O salario atual é $salarioAtual</p>"
+    echo "<p>O salario atual é $salarioAtual</p>";
 ?>
 
 
