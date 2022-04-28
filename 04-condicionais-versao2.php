@@ -23,10 +23,9 @@
     $numerob = 1;
 
     if($numero > $numerob){
-        echo "<p>$numero é maior que $numerob</p>";
-    }
-
 ?>
+        <p><?=$numero?> é maior que <?=$numerob?></p>
+<?php } ?>
 
     <h2>Condicionais compostas</h2>
 
@@ -34,26 +33,27 @@
     $nota1 = 6;
     $nota2 = 6;
     $media = ($nota1 + $nota2) / 2;
-    echo "<p>Média: $media</p>";
-
-    if($media > 7){
-        echo "<p>Aprovado</p>";
-    } else {
-        echo "<p>Reprovado</p>";
-    }
 ?>
+
+    <p>Média: <?=$media?></p>
+
+<?php    
+    if($media > 7){?>
+        <p>Aprovado</p>
+<?php } else { ?>        
+        <p>Reprovado</p>
+<?php } ?>
 
     <h2>Condicionais encadeadas</h2>
 
 <?php
-    if($media >= 7){
-        echo "<p class='aprovado'>Aprovado</p>";
-    } elseif (($media >=6) && ($media < 7)){
-        echo "<p class='recuperacao'>Recuperação</p>";
-    } else {
-        echo "<p class='reprovado'>Reprovado</p>";
-    }
-?>
+    if($media >= 7){ ?>
+        <p class='aprovado'>Aprovado</p>
+<?php    } elseif (($media >=6) && ($media < 7)){?>
+        <p class='recuperacao'>Recuperação</p>
+<?php    } else { ?>
+        <p class='reprovado'>Reprovado</p>
+<?php    } ?>
 
     <h2>Switch/case</h2>
 
@@ -66,11 +66,9 @@
         case 3: $assunto = "<p>Informações</p>"; break;
         default: $assunto = "<p>Falar com um humano</p>"; break;
     }
-
-    echo "<p>$assunto</p>"
-
 ?>
 
+    <p><?=$assunto?></p>
 
 
 </body>
