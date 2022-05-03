@@ -65,7 +65,32 @@
 
     </ol>
 
+    <h2>Foreach</h2>
+
+    <p>Loops exclusivo para Arrays</p>
+    
+    <ol>
+        <?php foreach(meses as $mes){?>
+            <li><?=$mes?></li>
+        <?php }; ?>
+    </ol> 
+
+<?php
+    // Array associativo (formados por pares de chave => valor)
+    $curso = [
+        //chabe (key) => valor (value)
+        "nome" => "Programador Web",
+        "carga_horaria" => 240,
+        "unidade" => "Penha",
+        "ucs" => 5
+    ];
+
+    foreach ($curso as $key => $value){
+?>
+    <p><?=$value?></p>
+
+<?php }; ?>
 
 
-</body>
+</body>     
 </html>
