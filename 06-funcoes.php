@@ -62,8 +62,8 @@
     $salarioMinimo = 1212;
     $novoSalario = 2500.47;
 
-    function formataNumero(float $valor){
-        return "R$ ".number_format($valor, $casasDecimais = 2, ",", ".");
+    function formataNumero(float $valor, int $casasDecimais = 2){
+        return "R$ ".number_format($valor, $casasDecimais, ",", ".");
     }   
 ?>
 
