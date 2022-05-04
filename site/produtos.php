@@ -1,4 +1,6 @@
-<?php include "includes/cabecalho.php"?>
+<?php 
+$titulo = "Site ABC - Produtos";
+include_once "includes/cabecalho.php"?>
         <h2>Página de produtos</h2>
         <hr>
         <p>Veja nossa página de produtos:</p>

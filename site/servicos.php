@@ -1,4 +1,6 @@
-<?php include "includes/cabecalho.php"?>
+<?php
+$titulo = "Site ABC - Serviços";
+include_once "includes/cabecalho.php"?>
         <h2>Página de serviços</h2>
         <hr>
         <p>Nossos especialistas atuam em uma série de serviços.</p>
