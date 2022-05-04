@@ -28,7 +28,7 @@
 
     <article>
         <h2>Conteúdo qualquer...</h2>
-        <?php require "textos.html"?> <!-- require: a página deixa de funcionar se tiver algo de errado dentro dele/ include: é mais permissivo e a página continuará fincionando mesmo com erro  -->
+        <?php require "textos.php"?> <!-- require: a página deixa de funcionar se tiver algo de errado dentro dele/ include: é mais permissivo e a página continuará fincionando mesmo com erro  -->
     </article>
     <hr>
 

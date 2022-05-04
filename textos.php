@@ -2,3 +2,4 @@
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil iusto qui consectetur asperiores, in aliquid eligendi unde eveniet id numquam reiciendis porro dignissimos dolorum, praesentium delectus doloremque blanditiis. Voluptatibus?</p>
 
+<?php require "lista.html";?>
