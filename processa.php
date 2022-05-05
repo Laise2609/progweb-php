@@ -11,9 +11,14 @@
     <hr>
 
 <?php
-    echo "<pre>";
+    if (empty($_POST["nome"]) || empty($_POST["email"])){?>
+    <p style="color: red;">Por favor, preecha nome e email!</p>
+    <p><a href="08-formulario.html">Voltar</a></p>
+<?php    
+    } else {
+    /* echo "<pre>";
     var_dump($_POST);
-    echo "</pre>";
+    echo "</pre>"; */
 
     //Capturando os dados enviados a partir do formulário
     $nome = $_POST["nome"];
@@ -45,6 +50,7 @@
         <li >Mensagem: <?=$mensagem?></li>
     </ul>
 
+    <?php } ?>
 
 </body>
 </html>
